@@ -3,6 +3,21 @@
     <head>
         <meta charset="utf-8">
         <title>Pizza Form</title>
+        <style media="screen">
+            html {
+                text-align: center;
+                background: rgba(255,202,220, .5);
+            }
+            .chck_spacing, input {
+                display: inline;
+                margin-right: 5px;
+            }
+            textarea{
+                display: block;
+                margin: 0 auto;
+            }
+
+        </style>
     </head>
     <body>
         <h1>Order</h1>
@@ -22,13 +37,13 @@
             <p>
                 <label for="topping">Pizza Toppings (Check all that apply)</label>
                 <br>
-                <input type="checkbox" name="topping[]" value="Cheese" checked> Cheese <br>
-                <input type="checkbox" name="topping[]" value="Mushrooms"> Mushrooms <br>
-                <input type="checkbox" name="topping[]" value="Pepperoni"> Pepperoni <br>
+                 <div class="chck_spacing"><input type="checkbox" name="topping[]" value="Cheese" checked>Cheese</div>
+                <div class="chck_spacing"><input type="checkbox" name="topping[]" value="Mushrooms">Mushrooms</div>
+                <div class="chck_spacing"><input type="checkbox" name="topping[]" value="Pepperoni">Pepperoni</div>
             </p>
+
             <p>
                 <label for="comments">Comments: </label>
-                <br>
                 <textarea name="name" rows="8" cols="30"></textarea>
             </p>
             <p>
