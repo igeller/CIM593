@@ -8,7 +8,7 @@
                 text-align: center;
                 background: rgba(255,202,220, .5);
             }
-            .chck_spacing, input {
+            .chck_spacing{
                 display: inline;
                 margin-right: 5px;
             }
@@ -16,6 +16,7 @@
                 display: block;
                 margin: 0 auto;
             }
+
 
         </style>
     </head>
@@ -30,9 +31,36 @@
                 <label for="last_name">Last Name: </label>
                 <input type="text" name="last_name" placeholder="Smith">
             </p>
+            <div class="address">
+                <p>
+                    <label for="street">Street: </label>
+                    <input type="text" name="street" placeholder="1234 Street">
+                </p>
+                <p>
+                    <label for="suite">Suite: </label>
+                    <input type="text" name="suite">
+                </p>
+                <p>
+                    <label for="city">City: </label>
+                    <input type="text" name="city">
+                </p>
+                <p>
+                    <label for="address">State: </label>
+                    <input type="text" name="state" placeholder="ST">
+                </p>
+                <p>
+                    <label for="zip">Zip: </label>
+                    <input type="text" name="zio" placeholder="11111">
+                </p>
+            </div>
+
             <p>
-                <label for="address">Address: </label>
-                <input type="text" name="address" placeholder="1234 Street City, ST Zip">
+                <label for="size">Select Size: </label>
+                <select name="size">
+                    <option value="sml">Small</option>
+                    <option value="med">Medium</option>
+                    <option value="lrg">Large</option>
+                </select>
             </p>
             <p>
                 <label for="topping">Pizza Toppings (Check all that apply)</label>
@@ -41,7 +69,15 @@
                 <div class="chck_spacing"><input type="checkbox" name="topping[]" value="Mushrooms">Mushrooms</div>
                 <div class="chck_spacing"><input type="checkbox" name="topping[]" value="Pepperoni">Pepperoni</div>
             </p>
-
+            <p>
+                <label for="cheese_amount">Cheese Amount: </label>
+                <div class="chck_spacing">
+                    <input type="radio" name="cheese_amount" value="">Regular
+                </div>
+                <div class="chck_spacing">
+                    <input type="radio" name="cheese_amount" value="">Extra
+                </div>
+            </p>
             <p>
                 <label for="comments">Comments: </label>
                 <textarea name="name" rows="8" cols="30"></textarea>
